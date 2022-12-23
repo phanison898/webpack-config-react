@@ -26,11 +26,7 @@ module.exports = {
         use: "babel-loader",
       },
       {
-        test: /\.css$/,
-        use: "css-loader",
-      },
-      {
-        test: /\.s[ac]ss$/i,
+        test: /\.(s[ac]|c)ss$/i,
         use: [
           // Creates `style` nodes from JS strings
           "style-loader",
